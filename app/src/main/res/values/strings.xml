@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TP1 - Desenvolvimento Kotlin Android</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_preference_name">Nome do usuário</string>
+    <string name="name_key">Salva o nome no SharedPreferences</string>
+    <string name="sobre_desbravadores">O Clube de Desbravadores é um projeto que trabalha especificamente com a educação cultural, social e religiosa de crianças e adolescentes situadas na faixa etária entre 10 e 15 anos.\n\nEsse projeto funciona de forma parecida com os Escoteiros do Brasil. O clube é dividido em unidades e cada unidade tem seus membros.\n\nNesse projeto você consegue simular um Clube de Desbravadores onde poderá criar unidades e cadastrar membros.</string>
+
+</resources>

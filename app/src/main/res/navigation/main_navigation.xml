@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.edu.infnet.tp1_desenvolvimentokotlinandroid.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_unidadesFragment"
+            app:destination="@id/unidadesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_desbravadoresFragment"
+            app:destination="@id/desbravadoresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/unidadesFragment"
+        android:name="br.edu.infnet.tp1_desenvolvimentokotlinandroid.fragments.UnidadesFragment"
+        android:label="fragment_unidades"
+        tools:layout="@layout/fragment_unidades" >
+        <action
+            android:id="@+id/action_unidadesFragment_to_novaUnidadeFragment"
+            app:destination="@id/novaUnidadeFragment" />
+        <action
+            android:id="@+id/action_unidadesFragment_to_editarUnidadeFragment"
+            app:destination="@id/editarUnidadeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/desbravadoresFragment"
+        android:name="br.edu.infnet.tp1_desenvolvimentokotlinandroid.fragments.DesbravadoresFragment"
+        android:label="fragment_desbravadores"
+        tools:layout="@layout/fragment_desbravadores" >
+        <action
+            android:id="@+id/action_desbravadoresFragment_to_editarDesbravadorFragment"
+            app:destination="@id/editarDesbravadorFragment" />
+        <action
+            android:id="@+id/action_desbravadoresFragment_to_novoDesbravadorFragment"
+            app:destination="@id/novoDesbravadorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/novaUnidadeFragment"
+        android:name="br.edu.infnet.tp1_desenvolvimentokotlinandroid.fragments.NovaUnidadeFragment"
+        android:label="fragment_nova_unidade"
+        tools:layout="@layout/fragment_nova_unidade" />
+    <fragment
+        android:id="@+id/editarUnidadeFragment"
+        android:name="br.edu.infnet.tp1_desenvolvimentokotlinandroid.fragments.EditarUnidadeFragment"
+        android:label="fragment_editar_unidade"
+        tools:layout="@layout/fragment_editar_unidade" />
+    <fragment
+        android:id="@+id/editarDesbravadorFragment"
+        android:name="br.edu.infnet.tp1_desenvolvimentokotlinandroid.fragments.EditarDesbravadorFragment"
+        android:label="fragment_editar_desbravador"
+        tools:layout="@layout/fragment_editar_desbravador" />
+    <fragment
+        android:id="@+id/novoDesbravadorFragment"
+        android:name="br.edu.infnet.tp1_desenvolvimentokotlinandroid.fragments.NovoDesbravadorFragment"
+        android:label="fragment_novo_desbravador"
+        tools:layout="@layout/fragment_novo_desbravador" />
+</navigation>
